@@ -29,7 +29,9 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo apt update -y
-          sudo docker run -d --name shellngn-pro \ --mount source=shellngn-data,target=/home/node/server/data \ -p 8080:8080 -e HOST=0.0.0.0 shellngn/pro:latest
+          sudo docker run -d --name shellngn-pro \
+          --mount source=shellngn-data,target=/home/node/server/data \
+          -p 8080:8080 -e HOST=0.0.0.0 shellngn/pro:latest
           curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && 
           sudo dpkg -i cloudflared.deb && 
           sudo cloudflared service install ${{ secrets.CF_TOKEN }}
