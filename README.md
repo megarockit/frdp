@@ -25,7 +25,7 @@ This <a href="https://github.com/cracker911181/cracker-RDP">RDP</a> Only Created
 14: Go To Your RDP Using Software
 15: Then Put Your Url
 16: Put The Username: runneradmin
-17: Put The Password: P@ssw0rd!
+17: Put The Password: runneradmin
 18: And Connect it
 
 	>---------------------<
